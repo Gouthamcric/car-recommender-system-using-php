@@ -1,0 +1,94 @@
+
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display:inline-block;
+}
+.myli{
+    display:list-item;
+}
+
+input[type="checkbox"][id^="myCheckbox"] {
+  display: none;
+}
+
+.label {
+  border: 1px solid #fff;
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+.label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+.label img {
+  height: 100px;
+  width: 100px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+
+:checked + .label {
+  border-color: #ddd;
+}
+
+
+:checked + .label:before {
+  content: "✓";
+  background-color: grey;
+  transform: scale(1);
+}
+
+
+:checked + .label img {
+  transform: scale(0.9);
+  
+  z-index: -1;
+}
+
+.btn {
+  margin: 0 15px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 0.33px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn.btn-dark {
+  background: #282828;
+  border: 1px solid #282828;
+  color: #F2F2F2;
+}
+
+.btn.btn-light {
+  background: #EDEDED;
+  border: 1px solid #EDEDED;
+}
+body{
+
+}
